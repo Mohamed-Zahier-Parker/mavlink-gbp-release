@@ -6848,5 +6848,18 @@
       <field type="int16_t" name="temperature" units="cdegC">Temperature</field>
       <field type="uint16_t" name="humidity" units="c%">Humidity</field>
     </message>
+        <message id="227" name="MPC_INPUTS">
+      <description>MPC inputs.</description>
+      <field type="uint64_t" name="time_usec" units="us"> </field>
+      <field type="float[2]" name="mpc_ref_in"> </field>
+      <field type="float[2]" name="mpc_mo_in"> </field>
+      <field type="int32_t" name="state">State machine state</field>
+      <field type="float" name="grd_vel">Ground Speed of UAV</field>
+    </message>
+    <message id="228" name="MPC_OUTPUTS">
+      <description>MPC outputs.</description>
+      <field type="uint64_t" name="time_usec" units="us"> </field>
+      <field type="float[2]" name="mpc_mv_out"> </field>
+    </message>
   </messages>
 </mavlink>
